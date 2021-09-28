@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>LV test</title>
+    </head>
+    <body>
+        <div>
+            <header>
+                <a href="" class="logo">WORK FOR HELP, HELP FOR WORK</a>
+                <nav>
+                    <ul class="topmenu">
+                      <li><a href="">Завод</a>
+                        <ul class="submenu">
+                            <li><a href="">Контракт</a></li>
+                            <li><a href="">Арбайт</a></li>
+                            <li><a href="">Однодневный выход</a></li>
+                        </ul>
+                        </li>
+
+
+
+                      <li><a href="" class="submenu-link">Офис</a>
+                        <ul class="submenu">
+                          <li><a href="">IT сфера</a></li>
+                          <li><a href="">Международная торговля</a></li>
+                          <li><a href="">Переводчики</a></li>
+                          <li><a href="">Трудовые агенты</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="" class="submenu-link">Арбайт</a>
+                        <ul class="submenu">
+                          <li><a href="">Стройка</a></li>
+                          <li><a href="">Срочный арбайт</a></li>
+                          <li><a href="">Хуйня</a></li>
+                          <li><a href="">Сюда лучше не ходить</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="" class="submenu-link">По городам</a>
+                        <ul class="submenu">
+                          <li><a href="">Инчон</a></li>
+                          <li><a href="">Ансан, Щихын</a></li>
+                          <li><a href="">Кимпхо, Согу</a></li>
+                          <li><a href="">Сосан</a></li>
+                          <li><a href="">Кванджу (большой)</a></li>
+                          <li><a href="">Кванджу (маленький)</a></li>
+                          <li><a href="">Пусан, Кимхе</a></li>
+                          <li><a href="">Кёнгидо</a></li>
+                          <li><a href="">Канводно</a></li>
+
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </nav>
+                  <hr>
+              </header> 
+        </div>
+        
+    </body>
+</html>
+
+
+
+
+
+//css//
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f2f2f2;
+}
+header {
+  background: white;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .3s ease-in-out;
+}
+.logo {
+  color: #feb386;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 2.5em;
+  padding: 20px 0;
+  
+}
+nav {
+  display: table;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 20px;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: #606060;
+  padding: 15px 105px;
+}
+.topmenu li a:hover { color: #feb386; }
+.submenu-link:after {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: inherit;
+  margin-left: 10px;
+}
+.submenu {
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 254.75px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+.submenu a {
+  color: #606060;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
